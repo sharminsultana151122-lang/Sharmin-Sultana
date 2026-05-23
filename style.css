@@ -1,0 +1,168 @@
+/* Universal Selector */
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Style */
+.navbar{
+    background-color: teal;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/*logo*/
+.logo{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.logo:hover{
+    transform: scale(1.15);
+}
+
+/* Menu */
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: opacity 0.3s;
+}
+
+/* Login Button */
+.login-btn {
+    background: #02b3b3;
+    color: white;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.login-btn:hover {
+    background: #019292;
+}
+
+/* Element Selector */
+/*p{
+    color: blue;
+    font-family: sans-serif;
+}
+
+/* Pseudo Selector */
+/*p:first-child{
+    color: palegreen;
+}
+
+/* Class Selector */
+.box{
+    display: inline-block;
+    width: 1300px;
+    padding: 15px;
+    margin: 5px;
+    background: aliceblue;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    vertical-align: top;
+    transition: 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box:hover{
+    transform: translateY(-5px);
+}
+.box h2{
+    margin-bottom: 15px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.box p{
+    line-height: 1.6;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box h3{
+    font-size: 30px;
+    text-align: center;
+}
+.box h4{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* ID Selector */
+#header{
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-display: fallback;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* Group Selector */
+h1, p{
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    width: fit-content;
+    margin: auto;
+}
+
+li{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*Google Map Design*/
+.map-btn{
+    display: inline-block;
+    padding: 12px 20px;
+    background: #4285F4;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.map-btn:hover{
+    background: #0d6efd;
+    transform: scale(1.05);
+}
+.map-btn img{
+    vertical-align: middle;
+    margin-right: 8px;
+}
