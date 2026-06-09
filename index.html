@@ -1,109 +1,276 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>My WebPage</title>
-
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css">
-    <link href="https://googleapis.com" rel="stylesheet">
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <title>MyPortfolio</title>
 </head>
-
 <body>
-
-    <!-- Navbar Section -->
-    <nav class="navbar">
-
-        <div class="logo">⚡ SomaTech</div>
-
-        <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </div>
-
-        <div>
-            <button class="login-btn">Login</button>
-        </div>
-
+    <!-- Navigation -->
+    <nav class="bg-base-100 shadow-sm">
+        <div class="navbar container mx-auto">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl">SomaTech</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+</div>
     </nav>
+<!-- Main Content -->
+    <main>
+<!-- Slider Carousel -->
+      <div class="carousel w-full">
+  <div id="slide1" class="carousel-item relative w-full h-[400px]">
+    <img
+      src="https://i.pinimg.com/1200x/41/85/ac/4185accd4366910190fae1762a74cca8.jpg"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide4" class="btn btn-circle">❮</a>
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide2" class="carousel-item relative w-full h-[400px]">
+    <img
+      src="https://i.pinimg.com/736x/ad/1b/ed/ad1bed4251cfb8def17c7695837c88ec.jpg"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle">❮</a>
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide3" class="carousel-item relative w-full h-[400px]">
+    <img
+      src="https://i.pinimg.com/736x/ee/79/de/ee79def0d8c57ffb0dc8a05b4e395bda.jpg"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" class="btn btn-circle">❮</a>
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide4" class="carousel-item relative w-full h-[400px]">
+    <img
+      src="https://i.pinimg.com/1200x/7c/4e/e6/7c4ee61b41a394c2443474afc05d97fd.jpg"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" class="btn btn-circle">❮</a>
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
+<!-- About Section -->
+ <Section class="px-4">
+    <div class="container mx-auto my-10">
+        <h1 class="text-3xl font-bold text-center">About Me</h1>
 
-    <!-- Header Section -->
-    <!-- <div id="header">
-        <h1>My Website</h1>
-    </div> -->
+        <div class="flex flex-col md:flex-row gap-5 items-center mt-10">
+            <div class="flex-1">
+                <img src="https://i.pinimg.com/736x/7b/30/68/7b306876273f4de4f59270c3c121328c.jpg" alt="About Me"
+                 class="w-full h-[400px] rounded-lg shadow-mg object-cover">
+            </div>
+            <div class="flex-1">
+                <p class="text-gray-700 text-lg">about me content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam similique, explicabo neque nihil animi alias nostrum quam sed sit porro rem nobis laborum iste rerum, vitae harum, voluptas error illo dolorum fuga. 
+                    Recusandae ipsum vel fugiat. Aut quam veritatis eius pariatur accusamus, commodi voluptatibus tenetur mollitia assumenda delectus consectetur numquam?
+                    More information about me goes here.</p>
+            </div>
+        </div>
+    </div>
+ </Section>
 
-    <!-- Content Section -->
-    <div class="box">
+<!-- Mission & Vision Section -->
+  <Section class="px-4">
+    <div class="container mx-auto my-10">
+        <h1 class="text-3xl font-bold text-center">Mission & Vision</h1>
 
-        <h2>About Me</h2>
-        <p>
-            Hello! My Name is Sharmin Sultana Soma. I am a student of Computer Science and Engineering.
-            I am passionate about learning new technology and exploring the world of programming.
-        </p>
+        <div class="flex flex-col md:flex-row gap-5 items-center mt-10">
+            <div class="flex-1">
+                <h1 class="text-2xl font-bold text-gray-800 text-center">Mission</h1>
+                <p class="text-gray-700 text-lg text-justify bg-teal-300 p-5 rounded-lg">
+                    Our mission is to provide exceptional services and create value for our clients while fostering a culture of innovation and excellence.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum.
+                </p>
+            </div>
+            <div class="flex-1">
+                <h1 class="text-2xl font-bold text-gray-800 text-center">Vision</h1>
+                <p class="text-gray-700 text-lg text-justify bg-lime-300 p-5 rounded-lg">
+                    Our vision is to be the leading provider of our services, recognized for our commitment to quality, innovation, and customer satisfaction.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged.
+                 It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </div>
+    </div>
+ </Section>
 
-        <p>
-            HTML (HyperText Markup Language) is the core language used to structure and display content on the web,
-            defining elements like text, images, links, and page layout so browsers can render websites properly.
-            Provides the basic structure for all web pages using opening and closing tags like p tag, h tag, and div etc.
-            Supports text, images, links, lists, tables, forms, and multimedia elements such as audio and video.
-            Works with CSS for styling and JavaScript for interactivity.
-            Uses attributes like src, href, and alt to add extra information and control element behavior.
-            HTML documents are transferred over the Internet using HTTP Protocol.
-        </p>
+ <!-- Services Section -->
+  <Section class="px-4">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center my-7">Our Services</h1>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+            <!--Service one-->
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800 text-center">Service One</h1>
+                <p class="text-gray-700 text-lg text-justify bg-yellow-300 p-5 rounded-lg">
+                    Service one description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <!--Service two-->
+              <div>
+                <h1 class="text-2xl font-bold text-gray-800 text-center">Service Two</h1>
+                <p class="text-gray-700 text-lg text-justify bg-yellow-300 p-5 rounded-lg">
+                    Service two description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+                <!--Service three-->
+                  <div>
+                <h1 class="text-2xl font-bold text-gray-800 text-center">Service Three</h1>
+                <p class="text-gray-700 text-lg text-justify bg-yellow-300 p-5 rounded-lg">
+                    Service three description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <!--Service four-->
+              <div>
+                <h1 class="text-2xl font-bold text-gray-800 text-center">Service Four</h1>
+                <p class="text-gray-700 text-lg text-justify bg-yellow-300 p-5 rounded-lg">
+                    Service four description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
 
-        <h3>My Interests</h3>
 
-        <ul>
-            <li>Reading</li>
-            <li>Coding</li>
-            <li>Traveling</li>
-            <li>Cycling</li>
-        </ul>
-
-        <!-- Image -->
-
-        <h4>Gallery</h4>
-        <img src="https://backoffice.ghorerbazar.com/productImages/UxodJ1776075897.png"
-            alt="Sample Image"
-            width="200"
-            height="200">
-
-        <!-- Video -->
-        <h3>Videos</h3>
-
-        <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/it1rTvBcfRg"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-
-        <br><br>
-
-        <!-- Link -->
-        <a href="https://www.google.com/maps/@24.8348672,89.37472,14z"
-   target="_blank"
-   class="map-btn">
-
-   <img src="https://cdn-icons-png.flaticon.com/512/2991/2991231.png"
-        alt="map icon"
-        width="20">
-
-   Track Me
-</a>
+        </div>
 
     </div>
+  </Section>
 
-    <!-- Footer Section -->
-    <div id="footer">
-        <p>Thank You For Visiting Me</p>
-        <p>&copy; 2026 Copyright by Soma. All Rights Reserved.</p>
+  <!-- Client Feedback -->
+   <section class="px-4">
+        <div class="container mx-auto px-4 py-8">
+            <h1 class="text-3xl text-center my-7 font-bold">Client Feedback</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+                <!-- feedback one -->
+                 <div>
+                    <h2 class="text-2xl font-bold text-gray-800 text-center">
+                        Client Name: Alex Johnson</h2>
+                     <p class="text-gray-700 text-lg bg-yellow-300 p-5 rounded-lg text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde provident voluptates aliquid minima esse voluptate rem quo expedita reprehenderit adipisci!
+                 </div>
+                 <!-- feedback two -->
+                 <div>
+                    <h2 class="text-2xl font-bold text-gray-800 text-center">
+                         Client Name: Sarah Williams</h2>
+                     <p class="text-gray-700 text-lg bg-yellow-300 p-5 rounded-lg text-center">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae porro nemo eius nobis facilis perferendis deserunt voluptatem exercitationem hic quibusdam.
+                 </div>
+                 <!-- feedback three -->
+                 <div>
+                    <h2 class="text-2xl font-bold text-gray-800 text-center">
+                         Client Name: Michael Brown</h2>
+                     <p class="text-gray-700 text-lg bg-yellow-300 p-5 rounded-lg text-center">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquam, quos excepturi ratione voluptas ducimus necessitatibus hic libero accusantium nulla!
+                     </p>   
+                 </div>
+                 <!-- feedback four -->
+                 <div>
+                    <h2 class="text-2xl font-bold text-gray-800 text-center">
+                         Client Name: Emily Davis Dickinson</h2>
+                     <p class="text-gray-700 text-lg bg-yellow-300 p-5 rounded-lg text-center">
+                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam fugiat eaque quaerat pariatur. Quia optio hic corrupti magnam quos quidem.
+                     </p>   
+                 </div>
+            </div>
+        </div>
+    </section>
+    </main>
+<!-- Footer-->
+        <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
+  <aside>
+    <svg
+      width="50"
+      height="50"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      class="inline-block fill-current">
+      <path
+        d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+    </svg>
+    <p class="font-bold">
+      SomaTech It Solutions
+      <br />
+      Providing reliable tech since 2026
+    </p>
+    <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+  </aside>
+  <nav>
+    <div class="grid grid-flow-col gap-4">
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+        </svg>
+      </a>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+        </svg>
+      </a>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+        </svg>
+      </a>
     </div>
-
+  </nav>
+</footer>
 </body>
-
 </html>
